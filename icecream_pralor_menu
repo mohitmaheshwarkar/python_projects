@@ -1,0 +1,53 @@
+print("""
+                          ..................... ABC ICE-CREAM PARLOR...........................
+                           
+                                                  Ice-cream Menu
+                                                
+                            Chocolate...................................Rs. 20
+                            Vanilla.....................................Rs. 15
+                         
+                                  
+                                                 *****""")
+
+Order = input("Please enter your order from the menu: ")
+payment_calculator = []
+
+if (Order == "1 chocolate"):
+        a = 20
+elif (Order == "2 chocolate"):
+        a = (40)
+elif (Order == "3 chocolate"):
+        a = (60)
+elif (Order == "4 chocolate"):
+        a = (80)
+elif (Order == "1 vanilla"):
+        a = (15)
+elif (Order == "2 vanilla"):
+        a = (30)
+elif (Order == "3 vanilla"):
+        a = (45)
+elif (Order == "4 vanilla"):
+        a = (60)
+elif (Order == "1 chocolate and 1 vanilla"):
+        a = (45)
+elif (Order == "1 chocolate and 2 vanilla"):
+        a = (50)
+elif (Order == "2 chocolate and 1 vanilla"):
+        a = (55)
+elif (Order == "1 chocolate and 3 vanilla"):
+        a = (65)
+elif (Order == "2 chocolate and 2 vanilla"):
+        a = (70)
+elif (Order == "3 chocolate and 1 vanilla"):
+        a = (75)
+elif (Order == "1 vanilla and 3 chocolate"):
+        a = (65)
+elif (Order == "3 vanilla and 1 chocolate"):
+        a = (75)
+else:
+        print("Please review your order and order again.")
+print("Your payment is Rs.", a,"/-Only")
+print(f"GST (18%) = {round(0.18*a, 2)}/- Rs. Only")
+print(f"Your total bill = {a + round(0.18*a, 2)}/- Rs. Only")
+print()
+print("Thank you for your visit.\nWelcome!")

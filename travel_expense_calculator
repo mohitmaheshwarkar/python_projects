@@ -1,0 +1,22 @@
+print('''
+
+***********************************************************************************************************************
+***********************************************************************************************************************
+      
+                                TRAVEL EXPENSE CALCULATOR 
+                                    (Mini project)
+
+***********************************************************************************************************************
+
+      ''')
+
+a = int(input("Enter the total expenses of travelling in Rs.: "))
+b = int(input("Enter the total expenses of fooding, including breakfast, luhch, dinner, etc.(excluding hotel fooding): "))
+c = int(input("Enter the hotel bil in Rs.: "))
+d = int(input("Enter the misc. expenses in Rs.: "))
+n = int(input("Enter the number people: "))
+total_expenses_made = (a+b+c+d)/n
+print()
+print("Total travel expenses made by the team of 4 people is Rs.", total_expenses_made,"/-Only")
+print()
+print("                                 -*-*-*-")

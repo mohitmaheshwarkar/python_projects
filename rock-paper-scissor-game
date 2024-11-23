@@ -1,0 +1,97 @@
+
+print("""
+
+                           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      
+                                    ROCK - PAPER - SCISSOR GAME (Mini Project)
+
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+""")
+
+
+
+# .................................................Plan of Project......................................................................
+
+# yourinput       computerinput      Result
+#   Rock            Rock               Tie
+#   Rock            Paper          Computer wins (bcs, paper will cover the rock)
+#   Rock            Scissor          You win
+#   Paper           Rock             You win (bcs, paper will cover the rock)
+#   Paper           Paper               Tie
+#   Paper           Scissor         Computer Wins
+#   Scissor          Rock           Computer wins
+#   Scissor          Paper           You win
+#   Scissor          Scissor            Tie
+
+
+# .................................................Project Code......................................................................
+
+
+import random
+
+
+available_options = ["rock", "paper", "scissor"]
+yourinput = input("Please chose an option from rock, paper and scissor:")
+computerinput = random.choice(available_options)
+print()
+print()
+
+if (yourinput == "rock" and computerinput == "rock"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("There is a tie. Plz start the game again!")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif (yourinput == "rock" and computerinput == "paper"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("Paper will comver the rock, hence computer wins.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif(yourinput == "rock" and computerinput == "scissor"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("Rock will break the scissor, hence you win.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif (yourinput == "paper" and computerinput == "paper"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("There is a tie. Plz start the game again!")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif (yourinput == "paper" and computerinput == "rock"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("Paper will comver the rock, hence you win.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif(yourinput == "paper" and computerinput == "scissor"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("Rock will break the scissor, hence computer wins.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif (yourinput == "scissor" and computerinput == "scissor"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("There is a tie. Plz start the game again!")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif (yourinput == "scissor" and computerinput == "paper"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("Scissor will cut the paper, hence you win.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+elif(yourinput == "scissor" and computerinput == "rock"):
+    print(f"You chose {yourinput}, and computer chose, {computerinput}")
+    print("Rock will break the scissor, hence computer wins.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+
+else:
+    print("These is some error in your input. Plz try again.")
+    print("Bye. Takce care.")
+    print()
+    print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")

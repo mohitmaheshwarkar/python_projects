@@ -1,0 +1,29 @@
+# In order to show both, wining and loosing options, the game has been designed to 0 to 3 numbers, only, which can be modified by the users as per their convenience.
+
+import random
+
+print("""
+Welcome to Number Guessing Game!
+During the game, you will have 7 chances to win the game, and if you loose, you can restart the game.
+""")
+
+number_range = random.randrange(3)
+
+chances = 7
+
+guess_count = 0
+
+while guess_count< chances:
+
+    guess_count = guess_count+1
+
+    my_guess = int(input("Enter a number, between 0 to 3: "))
+
+    if my_guess == number_range:
+        print(f"Your chose {my_guess}, and computer chose {number_range}, which matches.")
+        print(f"You guessed the number in your chance no. {guess_count}. Congratulations, you win the game!")
+        break
+
+    elif guess_count >= chances and my_guess != number_range:
+        print("Sorry. The game is over.")
+
